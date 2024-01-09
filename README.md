@@ -3,9 +3,9 @@ A python script to crack Caeser ciphers without knowing the key. All possible ke
 
 How to Run:
 
-python caeser-cracker.py "Atiir Gxp Rxtk"
+python caeser-cracker.py "Atiir Gxp Rxtk" 
 
-                 OR
+OR
 
 python3 caeser-cracker.py "Atiir Gxp Rxtk"
 
