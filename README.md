@@ -9,6 +9,5 @@ OR
 
 python3 caeser-cracker.py "Atiir Gxp Rxtk"
 
-![Output](https://github.com/jagmeetkamra/caeser-cipher-cracker/blob/main/output.png | width=500)
-
+<img src="https://github.com/jagmeetkamra/caeser-cipher-cracker/blob/main/output.png" width="450px">
 Currently only works for english alphabets, both uppercase and lowercase. NO SPECIAL CHARACTERS(.,-_*:';")
