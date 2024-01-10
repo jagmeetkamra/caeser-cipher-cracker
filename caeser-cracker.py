@@ -65,7 +65,7 @@ def decrypter(k):
             continue
     return "not found !"
         
-#main code
+#main code execution
 print("\nLets get encrypting...")
 enc = decrypter(1)
 print("\n\nPOTENTIAL DECRYPTION: [", enc, "]")
