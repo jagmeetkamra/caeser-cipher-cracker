@@ -22,6 +22,7 @@ for letter in code:
 
 # English alphabets added to a list
 alphabets=list(string.ascii_lowercase)
+specialChars=[" ", ",", ".", "'", "\"", ":", ";", "-", "_", "$", "/", "+", "=", "(", ")"]
 
 #function that tries all possible keys(1-25y) and stops when language is detected
 def decrypter(k):
@@ -37,8 +38,8 @@ def decrypter(k):
                 if code_letters[n] == alphabets[m]:
                     decoded.append(alphabets[m-key])
                     break
-                elif code_letters[n] == " ":
-                    decoded.append(" ")
+                elif code_letters[n] in specialChars:
+                    decoded.append(code_letters[n])
                     break
                 m += 1
             n += 1
