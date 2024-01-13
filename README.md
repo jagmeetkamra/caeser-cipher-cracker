@@ -12,5 +12,3 @@ python3 caeser-cracker.py "Atiir Gxp Rxtk"
 Output: 
 
 <img src="https://github.com/jagmeetkamra/caeser-cipher-cracker/blob/main/output.png" width="450px" padding=0>
-
- !! Currently only works for English alphabets, both uppercase and lowercase. NO SPECIAL CHARACTERS(.,-_*:';") !!
