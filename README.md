@@ -3,10 +3,6 @@ A python script to crack Caeser ciphers without specifying the key. All possible
 
 How to Run:
 
-python caeser-cracker.py "Atiir Gxp Rxtk" 
-
-OR
-
 python3 caeser-cracker.py "Atiir Gxp Rxtk"
 
 Output: 
