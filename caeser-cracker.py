@@ -20,11 +20,11 @@ code_letters=[]
 for letter in code:
     code_letters.append(letter)
 
-# English alphabets added to a list
+# English alphabets & special characters added to a list, to be used to compare later in the decrypter fucntion
 alphabets=list(string.ascii_lowercase)
 specialChars=[" ", ",", ".", "'", "\"", ":", ";", "-", "_", "$", "/", "+", "=", "(", ")"]
 
-#function that tries all possible keys(1-25y) and stops when language is detected
+#function that tries all possible keys(1-25), when language is detected returns the possible decryption
 def decrypter(k):
     key = k
     codelen=len(code_letters)
@@ -34,11 +34,11 @@ def decrypter(k):
         n = 0
         while n < codelen: # this loop runs for the length of the secret string
             m = 0
-            while m < 26: # this loop finds the index of alphabet, shifts it back using key and appends to list to decode 
+            while m < 26: # this loop finds the index of alphabet, shifts it back using key and appends to list the 'decoded' list 
                 if code_letters[n] == alphabets[m]:
                     decoded.append(alphabets[m-key])
                     break
-                elif code_letters[n] in specialChars:
+                elif code_letters[n] in specialChars: #when a special character is identified, do nothing and append as it is to the new list
                     decoded.append(code_letters[n])
                     break
                 m += 1
